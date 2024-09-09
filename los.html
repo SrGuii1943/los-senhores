@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOS SENHORES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Tela de Login -->
+  <div id="login-screen">
+    <div class="login-container">
+      <h2>LOS SENHORES</h2>
+      <form id="login-form">
+        <input type="text" id="username" placeholder="Nome de Usuário" required>
+        <input type="password" id="password" placeholder="Senha" required>
+        <button type="submit">Entrar</button>
+      </form>
+      <button id="go-to-register">Cadastre-se</button>
+    </div>
+  </div>
+
+  <!-- Tela de Cadastro -->
+  <div id="register-screen" style="display:none;">
+    <div class="login-container">
+      <h2>LOS SENHORES</h2>
+      <form id="register-form">
+        <input type="text" id="register-username" placeholder="Nome de Usuário" required>
+        <input type="password" id="register-password" placeholder="Senha" required>
+        <input type="password" id="confirm-password" placeholder="Confirmar Senha" required>
+        <button type="submit">Cadastrar</button>
+      </form>
+      <button id="go-to-login">Já tem uma conta? Entrar</button>
+    </div>
+  </div>
+
+  <!-- Página Inicial -->
+  <div id="main-page" style="display:none;">
+    <header>
+      <h1>LOS SENHORES</h1>
+      <div class="saldo">
+        <img src="https://imgur.com/BkUvdMu.gif" alt="Moeda GIF">
+        <span id="user-saldo">Saldo: R$ 0,00</span>
+      </div>
+    </header>
+    
+    <section class="profile">
+      <h2 id="user-name">Bem-vindo, <span id="display-username"></span></h2>
+    </section>
+
+    <nav class="menu-lateral">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Perfil</a></li>
+        <li><a href="#">Configurações</a></li>
+        <li><a href="#">Sair</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
